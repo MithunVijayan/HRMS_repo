@@ -1,0 +1,43 @@
+{
+  "3e3a8949-91f3-434e-9ab0-b6023800351f": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://netorgft15215289.sharepoint.com/sites/Portal": {
+        "dataSources": {
+          "Emp Personal Information": {
+            "tableName": "9cc573cc-b318-4931-9d38-f63408170954"
+          },
+          "Holiday": {
+            "tableName": "40338952-97bd-4581-a052-14f193e58c49"
+          },
+          "Holidays List": {
+            "tableName": "f10b412e-4d48-4f2f-999a-5379abe6ca5f"
+          },
+          "Login details": {
+            "tableName": "b5e70381-8ca5-4a9e-8430-b76204c8f3f2"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Login details",
+      "Emp Personal Information",
+      "Holidays List",
+      "Holiday"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3e3a8949-91f3-434e-9ab0-b6023800351f"
+  }
+}

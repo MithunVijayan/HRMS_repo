@@ -1,0 +1,12 @@
+Profile As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =Set(Showoverview,true);Set(ShowLeave,false);Set(Showpermission,false)
+
+    Layout1_4 As Layout1:
+
+    "'Profie menu Component_1' As 'Profie menu Component'":
+        Visible: =Layout1_4.openModule
+        X: =1166
+        Y: =Layout1_4.componentHeaderHeight
+        ZIndex: =2
+

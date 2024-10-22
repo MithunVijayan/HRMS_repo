@@ -1,0 +1,436 @@
+Login1 As screen:
+    BackgroundImage: =bck
+    ImagePosition: =ImagePosition.Fill
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container20 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(252, 234, 219, 1)
+        Height: =620
+        LayoutMode: =LayoutMode.Auto
+        LayoutWrap: =true
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =625
+        X: =726
+        Y: =100
+        ZIndex: =1
+
+        Container25 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            FillPortions: =0
+            Height: =Container20.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =25
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =50.58
+            X: =0.00
+            ZIndex: =1
+
+        Container21 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =329.00
+            X: =51.13
+            ZIndex: =2
+
+            Container24 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =80
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutMinHeight: =300
+                LayoutMinWidth: =200
+                LayoutMode: =LayoutMode.Auto
+                LayoutWrap: =true
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =316.20
+                X: =0.00
+                ZIndex: =1
+
+            Label9 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: ="Montserrat,arial"
+                FontWeight: =FontWeight.Bold
+                Size: =45
+                Text: ="YOUR ACCOUNT"
+                Width: =Container22.Width
+                X: =0.00
+                ZIndex: =2
+
+            Container23 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =67
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingRight: =63.22
+                PaddingTop: =12.65
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =329.00
+                X: =0.00
+                ZIndex: =3
+
+                Label12 As label:
+                    Align: =Align.Justify
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FillPortions: =1
+                    Font: ="Montserrat,arial"
+                    Height: =200
+                    LayoutMinWidth: =200
+                    PaddingBottom: =40
+                    Size: =10
+                    Text: ="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+                    Width: =265.64
+                    X: =0.00
+                    ZIndex: =1
+
+            Container22 As groupContainer.verticalAutoLayoutContainer:
+                Height: =100
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =329.00
+                X: =0.00
+                ZIndex: =4
+
+                Label13 As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: ="Montserrat,arial"
+                    FontWeight: =FontWeight.Bold
+                    PaddingBottom: =20
+                    PaddingTop: =0.00
+                    Size: =15
+                    Text: ="EMAIL"
+                    Width: =328.85
+                    X: =0.00
+                    ZIndex: =1
+
+                "'Username text box1' As text":
+                    BorderColor: =RGBA(69, 73, 49, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Font: ="Montserrat,arial"
+                    FontWeight: =FontWeight.Semibold
+                    Height: =60
+                    HoverBorderColor: =RGBA(69, 73, 49, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    PaddingRight: =3.17
+                    PaddingTop: =3.17
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =12
+                    RadiusBottomRight: =12
+                    RadiusTopLeft: =12
+                    RadiusTopRight: =12
+                    Size: =20
+                    Width: =Container22.Width-150
+                    X: =0.00
+                    ZIndex: =2
+
+                Label14 As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =30
+                    Size: =13
+                    Text: =
+                    Width: =94.86
+                    X: =0.00
+                    ZIndex: =3
+
+                Label15 As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: ="Montserrat,arial"
+                    FontWeight: =FontWeight.Bold
+                    PaddingBottom: =20
+                    Size: =15
+                    Text: ="PASSWORD"
+                    Width: =328.85
+                    X: =0.00
+                    ZIndex: =4
+
+                Container27 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    Height: =100
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =350
+                    PaddingBottom: =10
+                    PaddingLeft: =12
+                    PaddingRight: =0.00
+                    PaddingTop: =6.30
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: ='Username text box1'.Width
+                    X: =0.00
+                    ZIndex: =5
+
+                    "'Password text box1' As text":
+                        BorderColor: =RGBA(69, 73, 49, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Font: ="Montserrat,arial"
+                        FontWeight: =FontWeight.Semibold
+                        Height: =60
+                        HoverBorderColor: =RGBA(69, 73, 49, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Mode: |-
+                            =If(
+                                ! showpswd,
+                                TextMode.Password,
+                                TextMode.SingleLine
+                            )
+                        PaddingRight: =3.17
+                        PaddingTop: =3.17
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =12
+                        RadiusBottomRight: =12
+                        RadiusTopLeft: =12
+                        RadiusTopRight: =12
+                        Size: =20
+                        Width: ='Username text box1'.Width
+                        X: =0.00
+                        Y: =5
+                        ZIndex: =1
+
+                    Icon11 As icon.Hide:
+                        AutoDisableOnSelect: =false
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(69, 73, 49, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(69, 73, 49, 1)
+                        Height: =22
+                        HoverColor: =RGBA(113, 111, 110, 1)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Hide
+                        OnSelect: =Set(showpswd,!showpswd)
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =55
+                        X: =360
+                        Y: =25
+                        ZIndex: =2
+
+                Label16 As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =10
+                    Size: =13
+                    Text: =
+                    Width: =94.86
+                    X: =0.00
+                    ZIndex: =7
+
+                Button5 As button:
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(69, 73, 49, 1)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                    Font: ="Montserrat,arial"
+                    FontWeight: =FontWeight.Bold
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =RGBA(145, 143, 141, 1)
+                    OnSelect: |+
+                        =If(
+                            'Username text box1'.Text = "" || 'Password text box1'.Text = "",
+                            Notify(
+                                "Username and Password cant be empty",
+                                NotificationType.Warning
+                            ),
+                            If(
+                                LookUp(
+                                    'Login details',
+                                    EMAIL = 'Username text box1'.Text && Password = 'Password text box1'.Text,
+                                    true
+                                ),
+                                If(
+                                    LookUp(
+                                        'Login details',
+                                        EMAIL = 'Username text box1'.Text && Password = 'Password text box1'.Text
+                                    ).Role.Value = "Manager",
+                                    Navigate('Manager  dashboard'),
+                                    If(
+                                        LookUp(
+                                            'Login details',
+                                            EMAIL = 'Username text box1'.Text && Password = 'Password text box1'.Text
+                                        ).Role.Value = "Employee",
+                                        Navigate('Employee dashboard')
+                                    )
+                                );
+                                Notify(
+                                    "Logined sucessfully",
+                                    NotificationType.Success
+                                ),
+                                Notify(
+                                    "Invalid Username or Password",
+                                    NotificationType.Error
+                                )
+                            )
+                        );
+                        Set(
+                            userrole,
+                            LookUp(
+                                'Login details',
+                                EMAIL = 'Username text box1'.Text && Password = 'Password text box1'.Text
+                            ).Role.Value
+                        );
+                        Set(
+                            userFirstname,
+                            LookUp(
+                                'Login details',
+                                EMAIL = 'Username text box1'.Text
+                            )
+                        
+                        );
+                        Set(
+                         UserDetails,
+                            LookUp(
+                                'Emp Personal Information',
+                                Value(Title)=userFirstname.ID
+                            )
+                        );   
+                        Reset('Username text box1');
+                        Reset('Password text box1');
+                        
+                        
+                    PaddingBottom: =8
+                    PaddingRight: =3.17
+                    PaddingTop: =3.17
+                    PressedBorderColor: =RGBA(236, 236, 235, 1)
+                    PressedFill: =RGBA(217, 217, 216, 1)
+                    Size: =15
+                    Text: ="LOGIN"
+                    Width: =82.22
+                    X: =0.00
+                    ZIndex: =9
+
+                Label11 As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Size: =13
+                    Text: =
+                    Width: =94.86
+                    X: =0.00
+                    ZIndex: =10
+
+    Container26 As groupContainer.verticalAutoLayoutContainer:
+        Height: =500
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutWrap: =true
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =631
+        X: =50.58
+        Y: =200
+        ZIndex: =2
+
+        Label17 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(252, 234, 219, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: ="Montserrat,arial"
+            FontWeight: =FontWeight.Semibold
+            PaddingBottom: =15
+            PaddingTop: =3.17
+            Size: =18
+            Text: ="Login"
+            Width: =Container26.Width
+            X: =0.00
+            ZIndex: =1
+
+        Label18 As label:
+            AlignInContainer: =AlignInContainer.Start
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: ="Montserrat,arial"
+            FontWeight: =FontWeight.Bold
+            Height: =180
+            PaddingBottom: =100
+            PaddingTop: =0.00
+            Size: =55
+            Text: ="WELCOME  BACK"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Container26.Width
+            X: =0.00
+            ZIndex: =2
+
+        Label19 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(252, 234, 219, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: ="Montserrat,arial"
+            Size: =13
+            Text: ="Sign back in to your account to access your courses and embody the art of being human."
+            Width: =Container26.Width-120
+            X: =0.00
+            ZIndex: =3
+

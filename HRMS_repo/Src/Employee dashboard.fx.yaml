@@ -1,0 +1,15 @@
+"'Employee dashboard' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(0, 0, 0, 0)
+    ImagePosition: =ImagePosition.Fill
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Layout1_2 As Layout1:
+        ZIndex: =4
+
+    "'Profie menu Component_3' As 'Profie menu Component'":
+        Visible: =Layout1_2.openModule
+        X: =1166
+        Y: =Layout1_2.componentHeaderHeight
+        ZIndex: =5
+

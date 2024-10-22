@@ -1,0 +1,384 @@
+"'Holiday List screen' As screen":
+    ImagePosition: =ImagePosition.Center
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =ClearCollect(HolidayListCollection,'Holidays List')
+
+    Layout1_5 As Layout1:
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =App.Height-Layout1_5.componentHeaderHeight
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =App.Width-Layout1_5.ComponentMeuWidth
+        X: =Layout1_5.ComponentMeuWidth
+        Y: =Layout1_5.componentHeaderHeight
+        ZIndex: =2
+
+        Icon2 As icon.HorizontalLine:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =3
+            HoverColor: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.HorizontalLine
+            ZIndex: =1
+
+        Container2 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(229, 226, 215, 1)
+            FillPortions: =0
+            Height: =80
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =2
+
+            Label1_2 As label:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: ="Montserrat,arial"
+                FontWeight: =FontWeight.Semibold
+                PaddingLeft: =28
+                Size: =13
+                Text: ="Holidays List"
+                ZIndex: =2
+
+            Container5 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =Container2.Height
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.End
+                LayoutMinHeight: =50
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =4
+
+                Icon3 As icon.Add:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Fill: |
+                        =RGBA(68, 72, 48, 1)
+                    Height: =30
+                    HoverColor: =RGBA(68, 72, 48, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    Icon: =Icon.Add
+                    OnSelect: |-
+                        =UpdateContext({uploadImage:true});NewForm(Form2);UpdateContext({Showbtn:false})
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Visible: =If(userFirstname.Role.Value="Employee",false,true)
+                    Width: =40
+                    ZIndex: =1
+
+                Label2 As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Size: =13
+                    Text: =
+                    Width: =37
+                    ZIndex: =2
+
+        Container2_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            FillPortions: =0
+            Height: =80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =3
+
+            Label3 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =
+                Width: =25
+                ZIndex: =1
+
+            Icon4 As icon.Home:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(5, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =20
+                HoverColor: =RGBA(0, 0, 0, 1)
+                Icon: =Icon.Home
+                OnSelect: =If(userFirstname.Role.Value="Admin","Admin Dashboard",Navigate('Employee dashboard') )
+                PressedColor: =RGBA(0, 0, 0, 1)
+                Width: =20
+                ZIndex: =2
+
+            Icon5 As icon.ChevronRight:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Height: =20
+                Icon: =Icon.ChevronRight
+                PaddingLeft: =5
+                PaddingTop: =3
+                Width: =20
+                ZIndex: =3
+
+            Label1_3 As label:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: ="Montserrat,arial"
+                Size: =13
+                Text: ="Holidays List"
+                ZIndex: =4
+
+        Container3 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =4
+
+            Label4 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =
+                Width: =25
+                ZIndex: =1
+
+            UploadedImage1 As image:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =500
+                Image: =First(Last(HolidayListCollection).Attachments).AbsoluteUri
+                Width: =Container3.Width-Label4.Width-Label4_1.Width
+                ZIndex: =2
+
+            Label4_1 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =
+                Width: =25
+                ZIndex: =3
+
+    Container1_2 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(229, 226, 215, 0.62)
+        Height: =App.Height-Layout1_5.componentHeaderHeight
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =uploadImage
+        Width: =App.Width-Layout1_5.ComponentMeuWidth
+        X: =Layout1_5.ComponentMeuWidth
+        Y: =Layout1_5.componentHeaderHeight
+        ZIndex: =3
+
+        Container6 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(68, 72, 48, 1)
+            FillPortions: =0
+            Height: =450
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            ZIndex: =1
+
+            Icon6 As icon.Cancel:
+                AlignInContainer: =AlignInContainer.End
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =30
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({uploadImage:false})
+                PaddingRight: =15
+                PaddingTop: =10
+                Width: =50
+                ZIndex: =1
+
+            Form2 As form:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DataSource: ='Holidays List'
+                DefaultMode: =FormMode.New
+                LayoutMinHeight: =250
+                LayoutMinWidth: =400
+                NumberOfColumns: =1
+                ZIndex: =3
+
+                Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="{Attachments}"
+                    Default: =ThisItem.Attachments
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Holidays List'],DataSourceInfo.DisplayName,'{Attachments}')
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue9.Attachments
+                    Width: =500
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey12 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: ="Montserrat,arial"
+                        Height: =34
+                        Size: =15
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue9 As attachments:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        IsInDataCard: =true
+                        ItemColor: =RGBA(255, 255, 255, 1)
+                        ItemFill: =RGBA(100, 118, 132, 1)
+                        ItemHoverColor: =RGBA(0, 0, 0, 1)
+                        ItemHoverFill: =RGBA(205, 209, 213, 1)
+                        Items: =Parent.Default
+                        MaxAttachments: =1
+                        OnAddFile: |-
+                            =UpdateContext({Showbtn:true})
+                        OnRemoveFile: |-
+                            =UpdateContext({Showbtn:false})
+                        PaddingBottom: =5
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(32, 54, 71, 1)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage12 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue9.Y + DataCardValue9.Height
+                        ZIndex: =3
+
+                    StarVisible12 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =DataCardKey12.Height
+                        Size: =13
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey12.Y
+                        ZIndex: =4
+
+            Button1 As button:
+                AlignInContainer: =AlignInContainer.Center
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(IsBlank(First(DataCardValue9.Attachments).Name),DisplayMode.Disabled,DisplayMode.Edit)
+                Fill: =RGBA(100, 118, 132, 1)
+                Font: ="Montserrat,arial"
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                OnSelect: |-
+                    =SubmitForm(Form2);Notify("Saved sucessfully",NotificationType.Success);ClearCollect(HolidayListCollection,'Holidays List');UpdateContext({uploadImage: false });UpdateContext({Showbtn:false})
+                Size: =15
+                Text: ="Save"
+                Visible: =Showbtn
+                ZIndex: =4
+
+            Label5 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =14
+                Size: =13
+                Text: =
+                ZIndex: =5
+
+    "'Profie menu Component_5' As 'Profie menu Component'":
+        Visible: =Layout1_5.openModule
+        X: =1166
+        Y: =Layout1_5.componentHeaderHeight
+        ZIndex: =4
+
