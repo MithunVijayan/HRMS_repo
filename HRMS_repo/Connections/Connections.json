@@ -18,9 +18,6 @@
           "Emp Personal Information": {
             "tableName": "9cc573cc-b318-4931-9d38-f63408170954"
           },
-          "Holiday": {
-            "tableName": "40338952-97bd-4581-a052-14f193e58c49"
-          },
           "Holidays List": {
             "tableName": "f10b412e-4d48-4f2f-999a-5379abe6ca5f"
           },
@@ -33,8 +30,7 @@
     "dataSources": [
       "Login details",
       "Emp Personal Information",
-      "Holidays List",
-      "Holiday"
+      "Holidays List"
     ],
     "dependencies": {},
     "dependents": [],
